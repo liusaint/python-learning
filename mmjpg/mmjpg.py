@@ -7,12 +7,13 @@ def get_page_urls():
     # /home/' + num
     response = requests.get(base_url).content
     selector = html.fromstring(response)
+    print(selector)
     page_websites = []
     page_count = selector.xpath("//div[@class='page']/a[last()]/@href")[0]
     page_count = page_count.split('/')[-1]
     #这里重复构造变量，主要是为了获取图片总数。更高级的方法是使用函数间的传值，但是我忘了怎么写了，所以用了个笨办法。欢迎大家修改
     #构建图片具体地址的容器
-    for i in range(int(page_count)):
+    for i in range(1):
         if i == 0:
             url = base_url
         else:
@@ -125,3 +126,6 @@ if __name__ == '__main__':
     # for link in get_page_number(page_number):
     	
             download_image(get_image_title(link), get_image_detail_website(link))
+
+
+
