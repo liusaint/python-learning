@@ -43,16 +43,7 @@ def download_image(url,key):
 
         print('正在下载图片：%s，' % (title))
         print(src)
-        # headers = {
-        #     'Accept':'image/webp,image/apng,image/*,*/*;q=0.8',
-        #     'Accept-Encoding':'gzip, deflate',
-        #     'Accept-Language':'zh-CN,zh;q=0.8,en;q=0.6',
-        #     'Cache-Control':'no-cache',
-        #     'Host':'img.mmjpg.com',
-        #     'Proxy-Connection':'keep-alive',
-        #     # 'Referer':src,
-        #     'Upgrade-Insecure-Requests':'1',
-        #     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'}
+
         try:
             with open(title, 'wb') as f:
                 try:
