@@ -10,7 +10,7 @@ import codecs
 from urllib import parse
 
 
-# 交通银行
+# 平安银行  jsonp的解析 
 session = requests.Session()
 theHeaders = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
